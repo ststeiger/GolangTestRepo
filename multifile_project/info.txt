@@ -1,0 +1,6 @@
+http://stackoverflow.com/questions/28081486/golang-multiple-files-in-main-package
+	
+Unless you have *_test.go in your folder. 
+Then you need to (1) shopt -s ext glob and (2) go run !(*_test).go. 
+
+

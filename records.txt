@@ -1,0 +1,13 @@
+server localhost 53
+debug yes
+key "myzone.com" VgSnlV7/uxInJ2ScT8YbaJQruuzKakTzVp1Y1HZMDqnaLMcWPiHZIiFkqbKg8Y9Wb9m8ZIYzZKhitWwVTDG0fQ==
+zone mkaczanowski.com.
+update delete router.mkaczanowski.com. A
+update delete router.mkaczanowski.com. AAAA
+update add router.mkaczanowski.com. 120 A 88.71.73.131
+update add router.mkaczanowski.com. 120 AAAA 2001:41a0:52:a00:0:0:0:212
+update delete example.com. A
+update add example.com. 120 A 88.71.73.131
+show
+send
+
